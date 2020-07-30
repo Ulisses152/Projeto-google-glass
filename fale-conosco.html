@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Aula html5</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+</head>
+
+<body>
+    <div id=interface>
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A revolução do Google está chegando</h2>
+            </hgroup>
+
+            <img id="icon-fale" src="_imagens/contato.png">
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul type="a">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="specs.html">Especificações</a></li>
+                    <li><a href="fotos.html">Fotos</li></a>
+                    <li><a href="multimidia.html">Multimídia</li></a>
+                    <li><a href="fale-conosco.html">Fale conosco</li></a>
+                </ul>
+            </nav>
+        </header>
+        <header id="cabecalho-fale">
+            <hgroup>
+                <h3>Fale Conosco > Contato</h3>
+                <h1>Formulário de Contato</h1>
+                <h2>por Gustavo Guanabara</h2>
+                <h3 class="data-fale">Atualizado em 01/Maio/2013</h3>
+            </hgroup>
+        </header>
+        <div id="formulário">
+            <div id="user">
+
+                <form id="user-pwd">
+                    <h1 class="iden-user">Identificação do Usuário</h1>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="pwd">Senha:</label>
+                    <input type="password" id="pwd" name="pwd">
+                </form>
+                <div id="gender-email">
+                    <label id="email">E-mail:</h2></label>
+                    <input type="email" id="email" name="email">
+                    <div id="gender">
+
+                        <h1 class="sex">Sexo:</h1>
+
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label id="male" for="male">Masculino</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label id="female" for="female">Feminino</label><br>
+
+                    </div>
+                    <div class="date">
+                        <h3>Data de Nascimento:</h3>
+                        <input id="date" type="date">
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div id="address-user">
+                <h1 class="address">Endereço</h1>
+                <div class="field-box">
+                    <label for="name">Logradouro</label>
+                    <input type="text" id="l-address" name="name"><br>
+                </div>
+                <div class="field-box-number">
+                    <label for="number">Número:</label>
+                    <input type="number" id="number" name="number">
+                </div>
+                <div calss="state">
+                    <label for="state-brasil">Estado:</label>
+                    <select class="state-brasil" name="state-brasil">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                <div class="field-box-city">
+                    <label for="name">Cidade</label>
+                    <input type="city" id="city" name="city"><br>
+                </div>
+            </div>
+            <div id="message-user">
+
+                <h1 class="message">Mensagem</h1>
+                <div class="field-box-message">
+                    <label class="range">Grau de Urgência:</label>
+                    <input type="range" name="vol" value="0" min="0" max="100" oninput="display.value=value"
+                        onchange="display.value=value">
+                    <input type="text" id="display" value="0" readonly>
+                </div>
+
+
+                <div class="field-box-msg">
+                    <label for="msg">Mensagem:</label><br>
+                    <textarea class="msg"></textarea>
+                </div>
+
+
+            </div>
+            <div id="quero-um">
+                <h1 class="want-one">Quero um Google Glass</h1>
+                <div class="field-box-want">
+                    <input type="checkbox" id="want-one" name="want" value="want">
+                    <label for="want">Gostaria de adquirir um Google Glass quando disponível </label><br>
+                </div>
+                <div class="field-box-color">
+                    <label for="favcolor">Cor:</label>
+                    <input type="color" id="color" name="color">
+                </div>
+
+                <div class="field-box-amount">
+                    <label for="amount">Quantidade:</label>
+                    <input type="number" id="amount" name="amount">
+                </div>
+                <div class="field-box-price">
+                    <label for="price">Preço Total: R$</label>
+                    <input type="name" id="price" name=price>
+                </div>
+            </div>
+
+            <div class="button">
+                <input type="button" id="button" onclick="alert('Enviado')" value="Enviar">
+            </div>
+        </div>
+        <footer id="rodape">
+            <p>Copyright&copy; 2013 - by Gustavo Guanabara<br />
+                <a href="http://facebook.com" target="_blank">Facebook</a>
+                <a href="http://Twitter.com" target="_blank"> | Twitter</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
